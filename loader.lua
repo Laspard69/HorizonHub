@@ -1,4 +1,4 @@
--- ================= MAIN HUB LOADER =================
+
 local function loadMainUI()
     if game.PlaceId == 79546208627805 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Laspard69/HorizonHub/refs/heads/main/scripts/99nightsintheforest.lua", true))() -- 99NIF
