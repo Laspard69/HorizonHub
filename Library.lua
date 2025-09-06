@@ -1,5 +1,5 @@
 if (game:GetService("CoreGui")):FindFirstChild("Horizon Hub") and (game:GetService("CoreGui")):FindFirstChild("ScreenGui") then
-	(game:GetService("CoreGui")).Horizon Hub:Destroy();
+	(game:GetService("CoreGui")).HorizonHub:Destroy();
 	(game:GetService("CoreGui")).ScreenGui:Destroy();
 end;
 _G.Primary = Color3.fromRGB(100, 100, 100);
@@ -321,12 +321,12 @@ function Update:Window(Config)
 	local keybind = keybind or Enum.KeyCode.RightControl;
 	local yoo = string.gsub(tostring(keybind), "Enum.KeyCode.", "");
 	local Horizon Hub = Instance.new("ScreenGui");
-	Horizon Hub.Name = "Horizon Hub";
-	Horizon Hub.Parent = game.CoreGui;
-	Horizon Hub.DisplayOrder = 999;
+	HorizonHub.Name = "Horizon Hub";
+	HorizonHub.Parent = game.CoreGui;
+	HorizonHub.DisplayOrder = 999;
 	local OutlineMain = Instance.new("Frame");
 	OutlineMain.Name = "OutlineMain";
-	OutlineMain.Parent = Horizon Hub;
+	OutlineMain.Parent = HorizonHub;
 	OutlineMain.ClipsDescendants = true;
 	OutlineMain.AnchorPoint = Vector2.new(0.5, 0.5);
 	OutlineMain.BackgroundColor3 = Color3.fromRGB(30, 30, 30);
