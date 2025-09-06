@@ -1,4 +1,4 @@
-if (game:GetService("CoreGui")):FindFirstChild("Horizon Hub") and (game:GetService("CoreGui")):FindFirstChild("ScreenGui") then
+if (game:GetService("CoreGui")):FindFirstChild("HorizonHub") and (game:GetService("CoreGui")):FindFirstChild("ScreenGui") then
 	(game:GetService("CoreGui")).HorizonHub:Destroy();
 	(game:GetService("CoreGui")).ScreenGui:Destroy();
 end;
@@ -75,7 +75,7 @@ ImageButton.AutoButtonColor = false;
 MakeDraggable(ImageButton, OutlineButton);
 CreateRounded(ImageButton, 10);
 ImageButton.MouseButton1Click:connect(function()
-	(game.CoreGui:FindFirstChild("Horizon Hub")).Enabled = not (game.CoreGui:FindFirstChild("Horizon Hub")).Enabled;
+	(game.CoreGui:FindFirstChild("HorizonHub")).Enabled = not (game.CoreGui:FindFirstChild("HorizonHub")).Enabled;
 end);
 local NotificationFrame = Instance.new("ScreenGui");
 NotificationFrame.Name = "NotificationFrame";
@@ -134,7 +134,7 @@ function Update:Notify(desc)
 	Title.Position = UDim2.new(0, 55, 0, 14);
 	Title.Size = UDim2.new(0, 10, 0, 20);
 	Title.Font = Enum.Font.GothamBold;
-	Title.Text = "Horizon Hub";
+	Title.Text = "HorizonHub";
 	Title.TextColor3 = Color3.fromRGB(255, 255, 255);
 	Title.TextSize = 16;
 	Title.TextXAlignment = Enum.TextXAlignment.Left;
@@ -184,7 +184,7 @@ function Update:StartLoad()
 	MainLoaderFrame.BorderSizePixel = 0;
 	local TitleLoader = Instance.new("TextLabel");
 	TitleLoader.Parent = MainLoaderFrame;
-	TitleLoader.Text = "Horizon Hub";
+	TitleLoader.Text = "HorizonHub";
 	TitleLoader.Font = Enum.Font.FredokaOne;
 	TitleLoader.TextSize = 50;
 	TitleLoader.TextColor3 = Color3.fromRGB(255, 255, 255);
@@ -260,16 +260,16 @@ local SettingsLib = {
 };
 (getgenv()).LoadConfig = function()
 	if readfile and writefile and isfile and isfolder then
-		if not isfolder("Horizon Hub") then
-			makefolder("Horizon Hub");
+		if not isfolder("HorizonHub") then
+			makefolder("HorizonHub");
 		end;
-		if not isfolder("Horizon Hub/Library/") then
-			makefolder("Horizon Hub/Library/");
+		if not isfolder("HorizonHub/Library/") then
+			makefolder("HorizonHub/Library/");
 		end;
-		if not isfile(("Horizon Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json")) then
-			writefile("Horizon Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(SettingsLib));
+		if not isfile(("HorizonHub/Library/" .. game.Players.LocalPlayer.Name .. ".json")) then
+			writefile("HorizonHub/Library/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(SettingsLib));
 		else
-			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("Horizon Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json"));
+			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("HorizonHub/Library/" .. game.Players.LocalPlayer.Name .. ".json"));
 			for i, v in pairs(Decode) do
 				SettingsLib[i] = v;
 			end;
@@ -281,15 +281,15 @@ local SettingsLib = {
 end;
 (getgenv()).SaveConfig = function()
 	if readfile and writefile and isfile and isfolder then
-		if not isfile(("Horizon Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json")) then
+		if not isfile(("HorizonHub/Library/" .. game.Players.LocalPlayer.Name .. ".json")) then
 			(getgenv()).Load();
 		else
-			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("Horizon Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json"));
+			local Decode = (game:GetService("HttpService")):JSONDecode(readfile("HorizonHub/Library/" .. game.Players.LocalPlayer.Name .. ".json"));
 			local Array = {};
 			for i, v in pairs(SettingsLib) do
 				Array[i] = v;
 			end;
-			writefile("Horizon Hub/Library/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(Array));
+			writefile("HorizonHub/Library/" .. game.Players.LocalPlayer.Name .. ".json", (game:GetService("HttpService")):JSONEncode(Array));
 		end;
 	else
 		return warn("Status : Undetected Executor");
@@ -378,7 +378,7 @@ function Update:Window(Config)
 	NameHub.AnchorPoint = Vector2.new(0, 0.5);
 	NameHub.Size = UDim2.new(0, 1, 0, 25);
 	NameHub.Font = Enum.Font.GothamBold;
-	NameHub.Text = "Horizon Hub";
+	NameHub.Text = "HorizonHub";
 	NameHub.TextSize = 20;
 	NameHub.TextColor3 = Color3.fromRGB(255, 255, 255);
 	NameHub.TextXAlignment = Enum.TextXAlignment.Left;
@@ -411,7 +411,7 @@ function Update:Window(Config)
 	CloseButton.ImageColor3 = Color3.fromRGB(245, 245, 245);
 	CreateRounded(CloseButton, 3);
 	CloseButton.MouseButton1Click:connect(function()
-		(game.CoreGui:FindFirstChild("Horizon Hub")).Enabled = not (game.CoreGui:FindFirstChild("Horizon Hub")).Enabled;
+		(game.CoreGui:FindFirstChild("HorizonHub")).Enabled = not (game.CoreGui:FindFirstChild("HorizonHub")).Enabled;
 	end);
 	local ResizeButton = Instance.new("ImageButton");
 	ResizeButton.Name = "ResizeButton";
@@ -608,8 +608,8 @@ function Update:Window(Config)
 		(getgenv()).SaveConfig();
 	end);
 	CreateButton("Reset Config", function()
-		if isfolder("Horizon Hub") then
-			delfolder("Horizon Hub");
+		if isfolder("HorizonHub") then
+			delfolder("HorizonHub");
 		end;
 		Update:Notify("Config has been reseted!");
 	end);
@@ -672,7 +672,7 @@ function Update:Window(Config)
 	MakeDraggable(Top, OutlineMain);
 	UserInputService.InputBegan:Connect(function(input)
 		if input.KeyCode == Enum.KeyCode.Insert then
-			(game.CoreGui:FindFirstChild("Horizon Hub")).Enabled = not (game.CoreGui:FindFirstChild("Horizon Hub")).Enabled;
+			(game.CoreGui:FindFirstChild("HorizonHub")).Enabled = not (game.CoreGui:FindFirstChild("HorizonHub")).Enabled;
 		end;
 	end);
 	local Dragging = false;
