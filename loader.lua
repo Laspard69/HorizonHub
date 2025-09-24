@@ -1,4 +1,4 @@
---[[ 
+print[[ 
 
  /$$                                     /$$$$$$$$                                        /$$                        
 | $$                                    | $$_____/                                       | $$                        
@@ -12,6 +12,6 @@
                               | $$                                                                                   
                               |__/                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-]]--
+]]
 
 loadstring(game:HttpGet("https://scriptprotector.vercel.app/api/raw/8dcf8f43098750d43c41d4b9b2ef203c"))()
