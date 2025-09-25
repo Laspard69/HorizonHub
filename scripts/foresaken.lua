@@ -14,4 +14,4 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 ]]--
 
-loadstring(game:HttpGet("https://scriptprotector.vercel.app/api/raw/4bdab7d97df17b3b5652b95cb40fdd75"))()
+loadstring(game:HttpGet("https://scriptprotector.vercel.app/api/raw/73d94354235448fde0e77efe06a8cd77"))()
