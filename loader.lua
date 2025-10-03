@@ -14,4 +14,4 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 ]]
 
-loadstring(game:HttpGet("https://scriptprotector.vercel.app/api/raw/2b370df6953b18e9602b8ae082fcc4dc"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5bd758573e7e101e5c9b45f2fd95828e.lua"))()
