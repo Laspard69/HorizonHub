@@ -1,4 +1,4 @@
-``HORIZON HUB LICENSE
+HORIZON HUB LICENSE
 
 Copyright (c) 2025, Horizon Hub Team
 
@@ -57,4 +57,4 @@ The following individuals are currently authorized:
 
 - Laspard - @Laspard (listed by their Github username)
 
-By using this product, you accept these terms``
+By using this product, you accept these terms
