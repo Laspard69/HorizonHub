@@ -10,18 +10,18 @@ The user, by using, redistributing, or showcasing this project, acknowledges and
 
 # Definitions
 
-- Voidware CONFIGURATION FILE: A "custom configuration" for Voidware using the shared scripting API.
+- HorizonHub CONFIGURATION FILE: A "custom configuration" for HorizonHub using the shared scripting API.
 - REDISTRIBUTION: Distributing the source code of this project, and any source code of this project, and any source code dependent on this project, discluding the loadstring (one line of code that fetches this GitHub project and initializes it, looks something like {
       "loadstring(game:HttpGet("https://raw.githubusercontent.com/Laspard69/HorizonHub/refs/heads/main/Library.lua", true))()" -- subject to change and is limited only to source files held by the copyright holder.
 }), and any configurations.
 
 # Terms and conditions:
 
-1. You MAY create your own Voidware configuration file for personal use.
+1. You MAY create your own HorizonHub configuration file for personal use.
 
-2. You are NOT allowed to share your Voidware configuration file unless you meet the conditions specified in this license.
+2. You are NOT allowed to share your HorizonHub configuration file unless you meet the conditions specified in this license.
 
-3. If you would like to share your Voidware configuration file, you MUST ask the developers to upload it to this GitHub repository.
+3. If you would like to share your HorizonHub configuration file, you MUST ask the developers to upload it to this GitHub repository.
 
 4. Your shared configuration MAY NOT be shared anywhere else besides this GitHub repository UNLESS explicitly allowed by the maintainer.
 
