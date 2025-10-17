@@ -1,4 +1,4 @@
--- you cant skid LMAO 
+-- nice try diddy
 
 local HttpService = game:GetService("HttpService")
 
