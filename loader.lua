@@ -13,4 +13,4 @@
 
 ]]
 
-loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/034040ba8b44c0ea9241f5f4993e49053a6d49146ac52621c802f79edc3b6ca1/download"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/76b33b0c8e3b37fc8894763b64a8cb41.lua"))()
