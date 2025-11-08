@@ -13,8 +13,4 @@
 
 ]]
 
-local Player = game:GetService("Players")
-
-local plr = Players.LocalPlayer
-
-plr:Kick("Under Maintainance")
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/66bc6d30278bc08919bec8cde5e15fea.lua"))()
