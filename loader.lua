@@ -19,4 +19,4 @@ local players = game:GetService("Players")
 local plr = players.LocalPlayer
 
 setclipboard(tostring("https://discord.gg/5MWnDsEnbw"))
-plr:Kick("outdated script. get latest script at dsc.gg/officialhorizonhub or it is copied in ur clipboard!")
+plr:Kick("outdated script. get latest script at dsc.gg/sys32script or it is copied in ur clipboard!")
